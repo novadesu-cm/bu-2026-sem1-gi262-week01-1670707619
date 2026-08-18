@@ -6,8 +6,8 @@ public class Workshop : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // As01_SyntaxIf();
-        // As02_StringComparisonExample();
+        As01_SyntaxIf();
+        As02_StringComparisonExample();
         // As03_NumberComparisonExample();
         // As04_AndOrOperatorExample();
         // As05_GuessingNumberExample();
@@ -16,21 +16,55 @@ public class Workshop : MonoBehaviour
     }
 
     public bool isSixOClock;
-    public void As01_SyntaxIf()
+    void As01_SyntaxIf()
     {
-        
+        if (isSixOClock)
+        {
+            Debug.Log("The door opens.");
+        }
+        Debug.Log("Knock knock!");
     }
 
     public string password;
     public void As02_StringComparisonExample()
     {
-        
+        if (password != "Moon")
+        {
+            Debug.Log("wrong password");
+        }
+        if (password == "Moon")
+        {
+            Debug.Log("password is correct");
+        }
     }
 
     public int as03Number;
     public void As03_NumberComparisonExample()
     {
-
+        if (as03Number > 10)
+        {
+            Debug.Log("as03Number > 10");
+        }
+        if (as03Number < 10)
+        {
+            Debug.Log("as03Number < 10");
+        }
+        if (as03Number == 10)
+        {
+            Debug.Log("as03Number == 10");
+        }
+        if (as03Number >= 10)
+        {
+            Debug.Log("as03Number >= 10");
+        }
+        if (as03Number <= 10)
+        {
+            Debug.Log("as03Number <= 10");
+        }
+        if (as03Number != 10)
+        {
+            Debug.Log("as03Number != 10");
+        }
     }
 
     public int as04Number;
